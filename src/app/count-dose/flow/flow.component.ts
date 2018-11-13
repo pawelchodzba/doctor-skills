@@ -45,6 +45,7 @@ export class FlowComponent implements  DoCheck {
   }
   disabledKg(Kg) {
     this.disablWeight = !Kg.Form.value.kg;
+
   }
 
 }
