@@ -1,0 +1,12 @@
+.count-content{
+ margin-left: 20px;
+ height:80%;
+ width: 50%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+.head{
+  text-align: center;
+}

@@ -1,0 +1,15 @@
+@import '../assets/style/var.css';
+.all{
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  min-height: 100vh;
+}
+.sidebar{
+  background-color: var(--secondcolor);
+  width:20%;
+}
+.mainview{
+  background-color: var(--activecolor);
+  width: 80%;
+}

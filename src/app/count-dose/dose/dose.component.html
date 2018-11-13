@@ -1,0 +1,30 @@
+<div class = "all-count-form">
+  <div>
+      <p *ngIf = "!this.Form.get('numVal').valid && this.Form.get('numVal').dirty"> Wartoć musi być liczbą</p>
+  </div>
+
+  <form [formGroup] = 'Form'>
+    <input formControlName = 'numVal' type="text">
+      <div>
+        <div class="one-prop">
+          <label><input formControlName = 'dose' value = 'mmg'  type="radio">mmg</label>
+          <label><input formControlName = 'dose' value = 'mlg'  type="radio">mlg</label>
+          <label><input formControlName = 'dose' value = 'g'    type="radio">g</label>
+        </div>
+        <div class="one-prop">
+          <label><input formControlName = 'kg'  type="checkbox" >kg</label>
+        </div>
+        <div class="one-prop">
+          <label><input formControlName = 'time' type="radio" value='1' >min</label>
+          <label><input formControlName = 'time' type="radio" value='60' >h</label>
+          <label><input formControlName = 'time' type="radio" value='1440' >24h</label>
+        </div>
+      </div>
+  </form>
+
+<!-- <pre>{{this.Flow.value | json }}</pre> -->
+<!-- <pre>{{this.DoseForm.get('numVal').value | json }}</pre> -->
+</div>
+
+
+

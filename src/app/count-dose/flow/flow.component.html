@@ -1,0 +1,10 @@
+<div class = "head">
+  <app-header><p head><span>przelicz dawkę</span></p> </app-header>
+</div>
+<div class = "count-content">
+  <app-dose #refInputs ></app-dose>
+  <app-weight #refInputs  [hidden] = 'disablWeight'></app-weight>
+  <app-volume #refInputs></app-volume>
+  <app-result-flow #refInputs  [result]='result' ></app-result-flow>
+</div>
+

@@ -1,0 +1,23 @@
+@import '../../../assets/style/global.css';
+@import '../../../assets/style/var.css';
+.sidebar nav ul{
+background-color: var(--secondcolor);
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+
+}
+
+.sidebar li{
+  width: 100%;
+  background-color: rgb(117, 133, 92);
+  margin: 1px 0 0 -30px;
+  list-style: none;
+  cursor: pointer;
+  padding: 1px 4px;
+
+}
+.sidebar .active{
+  background-color: var(--activecolor);
+  border:1px solid var(--activecolor);
+}

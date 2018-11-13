@@ -1,0 +1,14 @@
+ul{
+  list-style: none;
+width: 80%;
+}
+li{
+  cursor: pointer;
+  margin-top:1px;
+}
+li:nth-child(2n){
+  background-color: rgb(1, 94, 5);
+}
+li:hover{
+  background-color: rgb(116, 175, 7);
+}

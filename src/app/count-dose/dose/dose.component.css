@@ -1,0 +1,24 @@
+@import '../../../assets/style/var.css';
+.all-count-form{
+  display: var(--flex);
+  position: var(--relative);
+  height: var(--height-form);
+
+}
+.all-count-form>form{
+  display: var(--flex);
+  position:var(--absolute);
+  left:var(--form-left);
+}
+.all-count-form>form input[type="text"]{
+  height:var(--input-height);
+  width: var(--input-width);
+  font-size: var(--input-sizefont);
+  text-align: var(--input-text);
+}
+.all-count-form>form>.all-prop{
+  text-align: var(--prop-algin);
+  position:var(--prop-position);
+  top:var(--prop-top);
+  padding-left: var(--prop-left-pad);
+}

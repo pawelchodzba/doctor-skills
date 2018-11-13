@@ -1,0 +1,5 @@
+
+ <ul (click)='selectRecord($event)'>
+   <li *ngFor="let one of objList; let i= index " id={{i}}>{{objList[i].nazwa}} {{objList[i].data}}</li>
+ </ul>
+

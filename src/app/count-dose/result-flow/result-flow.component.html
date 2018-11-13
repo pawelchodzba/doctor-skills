@@ -1,0 +1,13 @@
+<div class = "all-count-form">
+    <div>
+        <p *ngIf = "!this.Form.get('numVal').valid && this.Form.get('numVal').dirty"> Wartoć musi być liczbą</p>
+    </div>
+ <form [formGroup] = 'Form'>
+    <input formControlName = 'numVal' type="text" value= '{{result}}' >
+    <div class = "all-prop">
+      <label><input type="radio" formControlName="time" value="1">min</label>
+      <label><input type="radio" formControlName="time" value="60">h</label>
+      <label><input type="radio" formControlName="time" value="1440">24h</label>
+     </div>
+  </form>
+</div>

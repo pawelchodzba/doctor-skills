@@ -1,0 +1,9 @@
+<div class = "all-count-form">
+    <div>
+        <p *ngIf = "!this.Form.get('numVal').valid && this.Form.get('numVal').dirty"> Wartoć musi być liczbą</p>
+    </div>
+  <form [formGroup] = 'Form' >
+     <input formControlName = 'numVal' type="text" >
+     <div class = "all-prop">ml</div>
+  </form>
+</div>
