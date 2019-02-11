@@ -15,6 +15,10 @@ export class InputComponent {
     this.value = e.target.value;
   }
   sendVal(e): void {
-    this.val.emit(e.target.value);
+    const chars = e.target.value;
+    if (chars.length <= 3 ) {
+      return;
+    }
+    this.val.emit(chars);
   }
 }

@@ -1,4 +1,8 @@
-input{
- width: 200%;
+textarea{
  font-size: 20px;
+}
+@media all and (max-width:710px){
+  textarea{
+    width:90%;
+  }
 }

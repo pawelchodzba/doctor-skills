@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LayoutService } from './shared/services/layout.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  isSidebarVisible = false;
+
+  constructor(private layoutService: LayoutService) {}
+
+  ngOnInit(): void {
+    this.layoutService.sidebarSorce$.subscribe((isVIew) => {
+      this.isSidebarVisible = isVIew;
+    });
+  }
 }

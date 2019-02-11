@@ -1,11 +1,11 @@
-<div class="sidebar">
+<div class="sidebar ">
   <nav>
     <ul>
       <li [routerLink]="['/search-diagnosis']" [routerLinkActive]="'active'">search diagnosis</li>
       <li [routerLink]="['/count-dose']" [routerLinkActive]="'active'">count dose</li>
+      <li (click) = "logOut()" >WYLOGUJ</li>
     </ul>
 
   </nav>
-  <a href="../../wylog.php">WYLOGUJ</a><br>
-  <a href="../../index.php">MENU GŁÓWNE</a>
+
 </div>

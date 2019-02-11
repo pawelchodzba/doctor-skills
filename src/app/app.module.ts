@@ -10,16 +10,30 @@ import { CoreModule } from './core/core.module';
 import { RouterModule } from '@angular/router';
 import { BrowsersComponent } from './search-diagnosis/browsers/browsers.component';
 import { AppRoutingModule } from './app-routing.module';
+import { LoginRoutingModule } from './login/login-routing.module';
+import { LoginModule } from './login/login.module';
+import { AuthService } from './auth/auth.service';
+import { AuthGuard } from './auth/auth.guard';
+import { LayoutService } from './shared/services/layout.service';
+import { BannerComponent } from './banner/banner.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BannerComponent
   ],
   imports: [
-    BrowserModule, SearchDiagnosisModule, CountDoseModule, CoreModule,  HttpModule, AppRoutingModule
+    BrowserModule,
+    SearchDiagnosisModule,
+    CountDoseModule,
+    CoreModule,
+    HttpModule,
+    AppRoutingModule,
+    LoginRoutingModule,
+    LoginModule
 
     ],
-  providers: [SearchService],
+  providers: [SearchService, AuthService, AuthGuard, LayoutService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

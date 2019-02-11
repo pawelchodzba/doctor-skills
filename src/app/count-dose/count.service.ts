@@ -33,7 +33,7 @@ export class ValidCountService {
 
 export class CountFlowService {
 
-  time(ArrForms) {
+  time(ArrForms) {console.log(ArrForms);
     const Dose = this.doseCreate(ArrForms);
     const Weight = this.weightCreate(ArrForms);
     const Volume = this.volumeCreate(ArrForms);
@@ -83,6 +83,9 @@ export class CountFlowService {
             value: ArrForms[3].Form.value.numVal,
             time: ArrForms[3].Form.value.time
             };
+  }
+  test(a) {
+    return 33;
   }
 
 // function delay(time) {

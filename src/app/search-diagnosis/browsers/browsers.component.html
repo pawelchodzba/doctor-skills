@@ -1,13 +1,12 @@
+<div class = "all">
+
+</div>
 <div class = "head">
   <app-header><p head><span>Wyszukiwanie numeru ICD - 10</span></p> </app-header>
 </div>
-<div class = "wraper">
-    <div class = "content">
-    <div>
+
+  <div class = "content">
       <app-input  (val)= "getVal($event)" [findString]='findString'></app-input>
       <app-output [findString]='findString'></app-output>
-    </div>
-    <app-list [objList]='objResult'  (id)='idList($event)' *ngIf='fixedRemoveList' ></app-list>
   </div>
-</div>
-
+  <app-list [objList]='objResult'  (id)='idList($event)' *ngIf='fixedRemoveList' ></app-list>
